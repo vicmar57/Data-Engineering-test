@@ -10,7 +10,7 @@ import json
 from datetime import datetime
 
 
-def connect_to_db(): #get credentials and try to connect to DB
+def connect_to_db_init_tables(): #get credentials and try to connect to DB
     import mysql.connector
     from mysql.connector import errorcode
     import sys
@@ -134,7 +134,7 @@ def main():
         writer.writerows(final_combined_table)
         
 if __name__ == "__main__":
-    cnx, cursor = connect_to_db()
+    cnx, cursor = connect_to_db_init_tables()
     
     #get city configs (names, longitude, latitude)
     with open('city_details.json') as json_file:
