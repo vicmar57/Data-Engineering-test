@@ -42,7 +42,7 @@ def connect_to_db(): #get credentials and try to connect to DB
         cursor.execute("""CREATE TABLE IF NOT EXISTS orbital_data_Victor_Martinov (
                             id INT AUTO_INCREMENT PRIMARY KEY,
                             city VARCHAR(255) NOT NULL,
-                            pass_Tstamp_UTC DATE )
+                            pass_Tstamp_UTC TIMESTAMP )
                             """)   
         cursor.execute(""" CREATE TABLE IF NOT EXISTS city_stats_Victor_Martinov (
                             id INT AUTO_INCREMENT UNIQUE PRIMARY KEY,
@@ -149,9 +149,9 @@ if __name__ == "__main__":
 # CREATE PROCEDURE avg_ISS_pass_Victor_Martinov()
 # BEGIN
 #     select city, avg (day_cnt) as avg_passes from (
-#       select city, pass_Tstamp_UTC, count(*) as day_cnt
+#       select city, DATE(pass_Tstamp_UTC) as date , count(id) as day_cnt
 #       from orbital_data_Victor_Martinov
-#       group by city, pass_Tstamp_UTC
+#       group by city, date
 #       ) as temp
 #     group by city;
 # END;
