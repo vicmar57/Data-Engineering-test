@@ -1,0 +1,5 @@
+city,population,max_temperature,min_temperature,update_date,avg_passes
+Beer Sheva,209002,46.0,0.5,2020-04-30 09:20:49,7.1429
+Eilat,51935,48.3,0.9,2020-04-30 09:22:22,6.0
+Haifa,283640,44.6,-3.5,2020-04-30 09:16:04,7.1429
+Tel Aviv,451523,46.5,-2.0,2020-04-30 09:19:19,7.1429

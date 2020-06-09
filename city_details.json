@@ -1,0 +1,25 @@
+{
+  "city_details": [
+		{
+		"city_name" : "Haifa",
+		"latitude": 32.794044, 
+		"longitude": 34.9895718
+		},	
+		{
+			"city_name" : "Tel Aviv",
+			"latitude": 32.109333, 
+			"longitude": 34.855499 
+		},
+		{
+		"city_name" : "Beer Sheva",
+		"latitude": 31.252973, 
+		"longitude": 34.791462
+		},
+		{
+			"city_name" : "Eilat",
+			"latitude": 29.55805, 
+			"longitude": 34.94821
+		}
+	],
+	"passes": 50
+}
