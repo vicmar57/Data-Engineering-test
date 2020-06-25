@@ -155,3 +155,8 @@ if __name__ == "__main__":
 #       ) as temp
 #     group by city;
 # END;
+
+
+
+# feedback to improve on:
+# 1. split to smaller funcs, write more generic code, get rid of import to func, handle error handling whenever needed
