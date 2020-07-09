@@ -8,13 +8,11 @@ Created on Mon Jun  8 12:45:54 2020
 import requests
 import json
 from datetime import datetime
+import mysql.connector
+from mysql.connector import errorcode
+import sys
 
-
-def connect_to_db_init_tables(): #get credentials and try to connect to DB
-    import mysql.connector
-    from mysql.connector import errorcode
-    import sys
-    
+def connect_to_db_init_tables(): #get credentials and try to connect to DB  
     try:
         with open('SQLdbCred.properties') as file:
             DBcred = json.load(file)
